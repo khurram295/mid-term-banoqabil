@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+<script>
+
+// Qno 01 & qno 11
+//  The map method in JavaScript creates a new array by applying a provided function to each element in the original array. It doesn't modify the original array. Here's an example using an array of objects:
+// const originalArray = [1, 2, 3, 4, 5];
+// const squaredArray = originalArray.map(num => num * num);
+// console.log(squaredArray);
+
+
+// Qno 02 and qno 12
+// the filter method is used to create a new array with elements that pass a certain condition
+// const originalArray = ["karachi", "nagan", "sindhi", "lahore"];
+// const resultArray = originalArray.filter(str => str.length >= 5).map(str => str.toUpperCase());
+// console.log(resultArray);
+
+// Qno 03 and 1no n13 
+//  The sort method sorts the elements of an array in place. The default sorting order is based on string Unicode code points. For numbers, it sorts them as strings. To sort an array of objects by a specific property, you can use a custom comparison function:
+// const arrayOfObjects = [{ price: 20 }, { price: 10 }, { price: 30 }];
+// arrayOfObjects.sort((a, b) => b.price - a.price);
+// console.log(arrayOfObjects);
+
+// Qno 04 and qno 14
+// : The reduce method is used to accumulate elements of an array into a single value. Here's an example using an array of numbers:
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const sumOfEven = numbers.reduce((acc, num) => num % 2 === 0 ? acc + num : acc, 0);
+// console.log(sumOfEven);
+
+// Qno 05 and qno 15
+// A: The find method returns the first element in an array that satisfies a provided testing function, while the filter method returns an array of all elements that satisfy the condition. Here's an example:
+// const arrayObjects = [{ id: 1, status: 'pending' }, { id: 2, status: 'in-progress' }];
+// const targetId = 2;
+// const updatedStatus = 'completed';
+
+// const foundObject = arrayObjects.find(obj => obj.id === targetId);
+// if (foundObject) foundObject.status = updatedStatus;
+
+// console.log(arrayObjects);
+
+// Qno 06 and qno 16
+// here is an eg of map filter and reduce This code transforms each word to uppercase, filters words with more than 5 characters, and then joins them into a single string separated by commas.
+// const mixedArray = [-2, 5, 8, -1, 4, -6];
+// const average = mixedArray.filter(num => num > 0).reduce((acc, num, index, array) => acc + num / array.length, 0);
+// console.log(average.toFixed(2));
+
+//  Qno 07 and qno 17
+// Callback functions are functions passed as arguments to another function to be executed later. In the context of array methods, they are used as the function that defines the operation to be performed on each element. Here's an example with map
+// const people = [{ age: 25 }, { age: 17 }, { age: 30 }];
+// const adults = people.filter(person => person.age >= 18);
+// console.log(adults);
+
+//  Qno 08 and qno 18
+// : Error handling can be done using try-catch blocks. Here's an example with the reduce method:
+// const stringArray = ["apple", "banana", "kiwi", "grape"];
+// const sortedArray = stringArray.sort((a, b) => a.length - b.length);
+// console.log(sortedArray);
+
+//  Qno 09 and qno 19 
+// Immutability helps prevent unintended side effects and makes code more predictable. Here's an example using map for immutably updating an array of objects:
+// const nestedArrays = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+// const flattenedArray = nestedArrays.flat();
+// const sum = flattenedArray.reduce((acc, num) => acc + num, 0);
+// console.log(sum);
+
+//  Qno 10 and qno 20
+// Both map and forEach are array methods in JavaScript, but they serve different purposes, and their performance characteristics can differ.
+// =============== map array=====================
+// map Method:
+
+// Purpose: Creates a new array by applying a function to each element in the original array.
+// Performance Implications: map returns a new array, which can be beneficial when you want to create a transformed version of the original array without modifying it.
+// Use Cases: When you want to transform each element of an array and create a new array with the results.
+
+// <-------------foreach---------------->
+// Purpose: Iterates through each element of the array and performs an action without creating a new array.
+// Performance Implications: forEach is generally faster than map because it doesn't create a new array. It's used when you need to perform side effects or operations that don't involve creating a new array.
+// Use Cases: When you want to perform an action for each element of an array without creating a new array.
+
+
+// const array = [1, 2, 3, 4, 5];
+// const targetElement = 6;
+
+// const foundElement = array.find(element => element === targetElement) || { defaultValue: 'custom' };
+// console.log(foundElement);
+
+
+
+
+
+
+
+
+
+</script>
